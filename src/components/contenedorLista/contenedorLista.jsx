@@ -51,7 +51,7 @@ const ContenedorLista = ({ lista, agregar, eliminar, editar, eliminarTodo }) => 
               <li className={item[1]}> {item[0]} </li>
               <div className="div-iconos">
                 <img
-                  src="/editar.png"
+                  src="editar.png"
                   alt="icono editar"
                   onClick={(e) => {
                     e.preventDefault();
@@ -59,7 +59,7 @@ const ContenedorLista = ({ lista, agregar, eliminar, editar, eliminarTodo }) => 
                   }}
                 />
                 <img
-                  src="/eliminar.png"
+                  src="eliminar.png"
                   alt="icono eliminar"
                   onClick={(e) => {
                     e.preventDefault();

@@ -18,7 +18,7 @@ function App() {
     setLista(lista.filter((value) => value[2] !== id));
   };
 
-  const editarTarea = (id, newValue) => {
+  const editarTarea = (id) => {
     const tarea = document.getElementById("tarea");
     const prioridad = document.getElementById("prioridad");
 
