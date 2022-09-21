@@ -9,8 +9,8 @@ function App() {
     const tarea = document.getElementById("tarea");
     const prioridad = document.getElementById("prioridad");
     const id = Date.now();
-
-    setLista([...lista, [tarea.value, prioridad.value, id]]);
+    if (tarea.value !== "" && prioridad.value !== "DEFAULT")
+      setLista([...lista, [tarea.value, prioridad.value, id]]);
     return (tarea.value = "");
   };
 
@@ -22,7 +22,7 @@ function App() {
     const tarea = document.getElementById("tarea");
     const prioridad = document.getElementById("prioridad");
 
-    const edit = lista.filter((value) => value[2] == id);
+    const edit = lista.filter((value) => value[2] === id);
     //const editCategory = edit[0]
 
     const editTareas = edit[0];
@@ -36,10 +36,7 @@ function App() {
   };
 
   const eliminarTodo = (e) => {
-    lista.forEach((element) => {
-      setLista([]);
-    });
-
+    setLista([]);
     console.log(lista);
   };
 

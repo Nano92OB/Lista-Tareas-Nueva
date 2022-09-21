@@ -62,30 +62,28 @@ li {
   transition: all 300ms;
 }
 
-.li{
-  
-}
+
 
 li:hover {
   transform: translateY(-10px) scale(1.1);
   box-shadow: 0 10px 5px 0 rgba(90, 95, 101, 0.2);
 }
 
-.prioridad-alta {
+.a-prioridad-alta {
   color: #721c24;
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
   border-left: 7px solid #f5c6cb;
 }
 
-.prioridad-media {
+.b-prioridad-media {
   color: #856404;
   background-color: #fff3cd;
   border: 1px solid #ffeeba;
   border-left: 7px solid #ffeeba;
 }
 
-.prioridad-baja {
+.c-prioridad-baja {
   color: #004085;
   border: 1px solid #b8daff;
   border-left: 7px solid #b8daff;
@@ -181,4 +179,8 @@ li:hover {
   transition: ease-out;
   cursor: pointer;
   height: 35px;
+}
+
+.invalidInput {
+  color: red
 }
